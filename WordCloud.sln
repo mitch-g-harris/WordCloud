@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordCloud", "WordCloud\WordCloud.csproj", "{2163D98F-F902-4941-A6C2-5E265E61F61D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordCloudTests", "WordCloudTests\WordCloudTests.csproj", "{BCFDE570-1BBB-499B-8967-99A2719E2EDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2163D98F-F902-4941-A6C2-5E265E61F61D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2163D98F-F902-4941-A6C2-5E265E61F61D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2163D98F-F902-4941-A6C2-5E265E61F61D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2163D98F-F902-4941-A6C2-5E265E61F61D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCFDE570-1BBB-499B-8967-99A2719E2EDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCFDE570-1BBB-499B-8967-99A2719E2EDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCFDE570-1BBB-499B-8967-99A2719E2EDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCFDE570-1BBB-499B-8967-99A2719E2EDA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

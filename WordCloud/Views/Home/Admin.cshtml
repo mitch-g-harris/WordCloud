@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Admin";
+}
+@model SiteWordsViewModel
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table table-bordered table-responsive table-hover">
+    <tr>
+        <th>Word</th>
+        <th>Count</th>
+    </tr>
+    @foreach (SiteWord siteWord in Model.Words)
+    {
+<tr>
+    <td>@siteWord.Word</td>
+    <td>@siteWord.Count</td>
+
+</tr>
+
+    }
+</table>

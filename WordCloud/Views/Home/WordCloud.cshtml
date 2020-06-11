@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Word Cloud";
+}
+@model WordCloudViewModel
+
+<div class="text-center">
+    <div id="worcloud-container"></div>
+</div>
+
+<script src="https://code.highcharts.com/7.1/highcharts.js"></script>
+<script src="https://code.highcharts.com/7.1/modules/wordcloud.js"></script>
+<script>
+    const words = @Html.Raw(Json.Serialize(Model.Words));
+    const data = words.map(word => ({ name: word.word, weight: word.count }))
+    Highcharts.chart('worcloud-container', {
+        series: [{
+            type: 'wordcloud',
+            data: data,
+            rotation: {
+                from: 0,
+                to: 0,
+            },
+            minFontSize: 7,
+            style: {
+                fontFamily: 'Arial',
+            },
+            name: 'Occurrences'
+        }],
+        title: {
+            text: '@Html.Raw(Model.url)'
+        }
+    });
+
+</script>
+
+
+
+
+
+
+
+

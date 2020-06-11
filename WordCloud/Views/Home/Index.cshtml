@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div class="text-center">
+        <form action="Home/WordCloud" method="post">
+            <input type="text" name="url" value="https://www.trustpower.co.nz/" placeholder="https://.." />
+            <input type="checkbox" name="verbOnly" value="false" onchange="this.value=this.checked" />Verbs only
+            <input type="submit" value="Go!" />
+        </form>
+    </div>
